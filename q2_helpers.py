@@ -1,18 +1,4 @@
 from random import randint
-import ngram_score as ns
-import os
-
-file4 = os.getcwd() + "\english_quadgrams.txt"
-file3 = os.getcwd() + "\english_trigrams.txt"
-file2 = os.getcwd() + "\english_bigrams.txt"
-file1 = os.getcwd() + "\english_monograms.txt"
-fitness4 = ns.ngram_score(file4)
-fitness3 = ns.ngram_score(file3)
-fitness2 = ns.ngram_score(file2)
-fitness1 = ns.ngram_score(file1)
-
-def fitness(pt):
-    return (fitness4.score(pt) + fitness3.score(pt) + fitness2.score(pt) + fitness1.score(pt))/8
 
 # Removes all the X's that separate duplicate letters
 def prune_pt(pt):
