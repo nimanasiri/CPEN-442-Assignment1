@@ -14,7 +14,7 @@ JOOIEHDHDSECDSKUAKVUHDSZCJTSAAEJVPJYSUJVTJPPKHDCSSJOHDSAJNUESCACSPKEVEVBLSDEVUHJ
 'U': 'D', 'V': 'N', 'W': 'Z', 'X': 'K', 'Y': 'V', 'Z': 'P'}
 
 ### d)
-In q1.py I implemented the hillclimbing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-simple-substitution-cipher/). In my implementation I use the algorithm and data (english_quadgram.txt) taken from [here](http://practicalcryptography.com/cryptanalysis/text-characterisation/quadgrams/#a-python-implementation) to find the 'fitness' of english text (found in fitness.py). I also spoke with Ningfeng Yang about my algorithm, and had him take a look at my code to check my implementation. Code is contained in q1.py and should less than a minute to complete (sometimes needs to be run a few times).
+In q1.py I implemented the hillclimbing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-simple-substitution-cipher/). In my implementation I use the algorithm and data (english_quadgram.txt) taken from [here](http://practicalcryptography.com/cryptanalysis/text-characterisation/quadgrams/#a-python-implementation) to find the 'fitness' of english text (found in fitness.py). I also spoke with Ningfeng Yang about my algorithm, and had him take a look at my code to check my implementation. Code is contained in q1.py and should less than a minute to complete (occasionally might have to be re-run).
 
 
 ## Q2
