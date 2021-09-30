@@ -47,7 +47,7 @@ while max_fitness < GOAL_FITNESS:
     max_fitness -= 200
     char_map = new_key()
     print("Current fitness: {}, Goal Fitness: {}".format(max_fitness, GOAL_FITNESS))
-    for i in range(0,10000):
+    for i in range(0,100000):
         # Swap two random characters in char_map
         first_char = chr(ord('A') + random.randint(0,25))
         second_char = chr(ord('A') + random.randint(0,25))
