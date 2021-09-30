@@ -1,8 +1,7 @@
-# Answers for All Questions:
-
-Can just run Q1 by simply executing *python q1.py*
+# How to Run:
 
 ## Q1
+Can just run Q1 by simply executing *python q1.py*
 ### a) Plaintext  
 OFFWITHTHEIRHEADSANDTHEPROCESSIONMOVEDONCOMMATHREEOFTHESOLDIERSREMAININGBEHINDTOEXECUTETHEUNFORTUNATEGARDENERSCOMMAWHORANTOALICEFORPROTECTIONDOTYOUSHANTBEBEHEADEDSAIDALICECOMMAANDSHEPUTTHEMINTOALARGEFLOWERPOTTHATSTOODNEARDOTTHETHREESOLDIERSWANDEREDABOUTFORAMINUTEORTWOCOMMALOOKINGFORTHEMCOMMAANDTHENQUIETLYMARCHEDOFFAFTERTHEOTHERSDOTARETHEIRHEADSOFFSHOUTEDTHEQUEENDOTTHEIRHEADSAREGONECOMMAIFITPLEASEYOURMAJESTYTHESOLDIERSSHOUTEDINREPLY
 
@@ -16,12 +15,12 @@ JOOIEHDHDSECDSKUAKVUHDSZCJTSAAEJVPJYSUJVTJPPKHDCSSJOHDSAJNUESCACSPKEVEVBLSDEVUHJ
 'U': 'D', 'V': 'N', 'W': 'Z', 'X': 'K', 'Y': 'V', 'Z': 'P'}
 
 ### d)
-In q1.py I implemented the hillclimbing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-simple-substitution-cipher/). In my implementation I use the algorithm and data (english_quadgram.txt) taken from [here](http://practicalcryptography.com/cryptanalysis/text-characterisation/quadgrams/#a-python-implementation) to find the 'fitness' of english text (found in fitness.py). I also spoke with Ningfeng Yang about my algorithm, and had him take a look at my code to check my implementation. Code is contained in q1.py and should less than a minute to complete (occasionally might have to be re-run).
+In q1.py I implemented the hillclimbing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-simple-substitution-cipher/). In my implementation I use the algorithm and data (english_quadgram.txt) taken from [here](http://practicalcryptography.com/cryptanalysis/text-characterisation/quadgrams/#a-python-implementation) to find the 'fitness' of english text (found in fitness.py). I also spoke with Ningfeng Yang about my algorithm, and had him take a look at my code to check my implementation. Code is contained in q1.py and should take <5 minutes to complete (occasionally might have to be re-run).
 
 
 ## Q2
 
-Can just run Q2 by simply executing *python q2.py*
+Can just run Q2 by simply executing *python q2.py*. In order to run multiple instances without overlapping logs, we need to pass in a file name (ex. log1.txt) for the program to log to (ex. *python q2.py logfile2.txt*). 
 
 ### a) Plaintext
 OHCOMMAHEWILLSEEYOUCOMMASAIDTHESOLDIERWHOHADTAKENHERMESSAGETOTHEWIZARDCOMMAALTHOUGHHEDOESNOTLIKETOHAVEPEOPLEASKTOSEEHIMDOTINDEEDCOMMAATFIRSTHEWASANGRYANDSAIDISHOULDSENDYOUBACKWHEREYOUCAMEFROMDOTTHENHEASKEDMEWHATYOULOOKEDLIKECOMMAANDWHENIMENTIONEDYOURSILVERSHOESHEWASVERYMUCHINTERESTEDDOTATLASTITOLDHIMABOUTTHEMARKUPONYOURFOREHEADCOMMAANDHEDECIDEDHEWOULDADMITYOUTOHISPRESENCEDOTIUSTTHENABELLRANGCOMMAANDTHEGREENGIRLSAIDTODOROTHYCOMMATHATISTHESIGNALDOTYOUMUSTGOINTOTHETHRONEROOMALONEDOTSHEOPENEDALITTLEDOORANDDOROTHYWALKEDBOLDLYTHROUGHANDFOUNDHERSELFINAWONDERFULPLACEDOTITWASABIGCOMMAROUNDROOMWITHAHIGHARCHEDROOFCOMMAANDTHEWALLSANDCEILINGANDFLOORWERECOVEREDWITHLARGEEMERALDSSETCLOSELYTOGETHERDOTINTHECENTEROFTHEROOFWASAGREATLIGHTCOMMAASBRIGHTASTHESUNCOMMAWHICHMADETHEEMERALDSSPARKLEINAWONDERFULMANNERDOTBUTWHATINTERESTEDDOROTHYMOSTWASTHEBIGTHRONEOFGREENMARBLETHATSTOODINTHEMIDDLEOFTHEROOMDOTITWASSHAPEDLIKEACHAIRANDSPARKLEDWITHGEMSCOMMAASDIDEVERYTHINGELSEDOTINTHECENTEROFTHECHAIRWASANENORMOUSHEADCOMMAWITHOUTABODYTOSUPPORTITORANYARMSORLEGSWHATEVERDOTTHEREWASNOHAIRUPONTHISHEADCOMMABUTITHADEYESANDANOSEANDMOUTHCOMMAANDWASMUCHBIGGERTHANTHEHEADOFTHEBIGGESTGIANTDOTASDOROTHYGAZEDUPONTHISINWONDERANDFEARCOMMATHEEYESTURNEDSLOWLYANDLOOKEDATHERSHARPLYANDSTEADILYDOTTHENTHEMOUTHMOVEDCOMMAANDDOROTHYHEARDAVOICESAYIAMOZCOMMATHEGREATANDTERRIBLEDOTWHOAREYOUCOMMAANDWHYDOYOUSEEKMEITWASNOTSUCHANAWFULVOICEASSHEHADEXPECTEDTOCOMEFROMTHEBIGHEADSOSHETOOKCOURAGEANDANSWEREDIAMDOROTHYCOMMATHESMALLANDMEEKDOTIHAVECOMETOYOUFORHELPDOTTHEEYESLOOKEDATHERTHOUGHTFULLYFORAFULLMINUTEDOTTHENSAIDTHEVOICEWHEREDIDYOUGETTHESILVERSHOESIGOTTHEMFROMTHEWICKEDWITCHOFTHEEASTCOMMAWHENMYHOUSEFELLONHERANDKILLEDHERCOMMASHEREPLIEDDOTWHEREDIDYOUGETTHEMARKUPONYOURFOREHEADCONTINUEDTHEVOICEDOTTHATISWHERETHEGOODWITCHOFTHENORTHKISSEDMEWHENSHEBADEMEGOODBYEANDSENTMETOYOUCOMMASAIDTHEGIRLDOTAGAINTHEEYESLOOKEDATHERSHARPLYCOMMAANDTHEYSAWSHEWASTELLINGTHETRUTHDOTTHENOZASKEDCOMMAWHATDOYOUWISHMETODOSENDMEBACKTOKANSASCOMMAWHEREMYAUNTEMANDUNCLEHENRYARECOMMASHEANSWEREDEARNESTLYDOTIDONTLIKEYOURCOUNTRYCOMMAALTHOUGHITISSOBEAUTIFULDOTANDIAMSUREAUNTEMWILLBEDREADFULLYWORRIEDOVERMYBEINGAWAYSOLONGDOTTHEEYESWINKEDTHREETIMESCOMMAANDTHENTHEYTURNEDUPTOTHECEILINGANDDOWNTOTHEFLOORANDROLLEDAROUNDSOQUEERLYTHATTHEYSEEMEDTOSEEEVERYPARTOFTHEROOMDOTANDATLASTTHEYLOOKEDATDOROTHYAGAINDOTWHYSHOULDIDOTHISFORYOUASKEDOZDOTBECAUSEYOUARESTRONGANDIAMWEAKBECAUSEYOUAREAGREATWIZARDANDIAMONLYALITTLEGIRLDOTBUTYOUWERESTRONGENOUGHTOKILLTHEWICKEDWITCHOFTHEEASTCOMMASAIDOZ
@@ -35,7 +34,7 @@ MKUMGEVPECYNELBLRLDPZOUMGEVPLSDQMILHVRQDRDPNMKYLVYHRSKRDPCNLLSMXGTMIXPKYZLEQTOVP
 
 
 ### d)
-I use the simulated annealing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-playfair/). If the algorithm does not find the solution then a new key is generated and the program keeps iterating.  While writing it, I checked my algorithm with Ningfeng Yang and also had him take a look at my implementation. He gave me some advice on calculating the fitness scores and adding entropy. Code is contained in q2*.py and should take about 2-5 minutes to produce a correct key, but may need to be re-run a few times. Logs can be found in logfile.txt, and example runs can be found from log3.txt and log4.txt.
+I use the simulated annealing algorithm from [here](http://practicalcryptography.com/cryptanalysis/stochastic-searching/cryptanalysis-playfair/). If the algorithm does not find the solution then a new key is generated and the program keeps iterating.  While writing it, I checked my algorithm with Ningfeng Yang and also had him take a look at my implementation. He gave me some advice on calculating the fitness scores and adding entropy. Code is contained in q2*.py and should take about 2-20 minutes to produce a correct key, but I still run 4-6 instances of the program when I want to ensure a correct result in <10-15 minutes. Logs can be found in logfile.txt, and an example of a successful run can be found in example_log.txt.
 
 ## Q3
 Can just run Q3 by simply executing *python q3.py*
@@ -46,7 +45,9 @@ Can just run Q3 by simply executing *python q3.py*
 
 
 ## Q4
-1. We have the MD5 hash of my student number x=227C7A616910928FF848FC022C9E0FCF, and y is stored in y.txt due to unprintable characters, but the encoded value is = 3232374337413631363931303932384646383438464330323243394530464346c92f553a, where h(x) = h(y) = 0x81a318f3.
+Can just run Q4 by simply executing *python q4.py*
+
+1. We have the MD5 hash of my student number x=227C7A616910928FF848FC022C9E0FCF, and y is stored in y.txt due to unprintable characters (but the encoded value is 3232374337413631363931303932384646383438464330323243394530464346c92f553a) where h(x) = h(y) = 0x81a318f3.
 
 2. I read this [paper](https://sar.informatik.hu-berlin.de/research/publications/SAR-PR-2006-05/SAR-PR-2006-05_.pdf) for the algorithm used for finding y. It's algebraically reversing the crc32 steps. Implementation is contained in q4.py. It took 0.001 seconds to run.
 

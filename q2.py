@@ -63,6 +63,8 @@ while max_fitness < GOAL_FITNESS:
                     logging.info("I FOUND IT")
                     logging.info("Final Fitness: {}".format(max_fitness))
                     logging.info("Final Key: {}".format(max_key))
+                    print("I FOUND IT")
+                    print("Final Key: {}".format(max_key))
                     exit()
             elif dF < 0 and random.uniform(0,1) <= math.exp(dF / temp):
                 max_fitness = fitness
