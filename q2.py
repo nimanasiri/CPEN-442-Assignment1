@@ -28,7 +28,7 @@ max_fitness = -sys.maxsize - 1
 while max_fitness < GOAL_FITNESS:
     logging.info("Starting with a new key")
 
-    # Swap two random characters, rows, cols, complete shuffle
+    # Make completely random key
     q2_helpers.new_key(key)
 
     pt = ''.join(q2_helpers.decode(key, ciphertext))

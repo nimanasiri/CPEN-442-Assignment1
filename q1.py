@@ -24,11 +24,7 @@ def new_key():
 # Fitness of correct plaintext -1806.5979492125941
 ciphertext = "JOOIEHDHDSECDSKUAKVUHDSZCJTSAAEJVPJYSUJVTJPPKHDCSSJOHDSAJNUESCACSPKEVEVBLSDEVUHJSMSTFHSHDSFVOJCHFVKHSBKCUSVSCATJPPKIDJCKVHJKNETSOJCZCJHSTHEJVUJHGJFADKVHLSLSDSKUSUAKEUKNETSTJPPKKVUADSZFHHDSPEVHJKNKCBSONJISCZJHHDKHAHJJUVSKCUJHHDSHDCSSAJNUESCAIKVUSCSUKLJFHOJCKPEVFHSJCHIJTJPPKNJJXEVBOJCHDSPTJPPKKVUHDSVQFESHNGPKCTDSUJOOKOHSCHDSJHDSCAUJHKCSHDSECDSKUAJOOADJFHSUHDSQFSSVUJHHDSECDSKUAKCSBJVSTJPPKEOEHZNSKASGJFCPKRSAHGHDSAJNUESCAADJFHSUEVCSZNG"
 
-
-#orig_char_map = {'A': 'W', 'B': 'P', 'C': 'L', 'D': 'R', 'E': 'U', 'F': 'I', 'G': 'T',
-                            # 'H': 'F', 'I': 'Q', 'J': 'J', 'K': 'Y', 'L': 'M', 'M': 'C', 
-                            # 'N': 'K', 'O': 'G', 'P': 'N', 'Q': 'B', 'R': 'X', 'S': 'S', 'T': 'V', 
-                            # 'U': 'Z', 'V': 'H', 'W': 'D', 'X': 'A', 'Y': 'E', 'Z': 'O'}
+GOAL_FITNESS = -1807
 
 char_map = new_key()
 
@@ -47,10 +43,10 @@ max_fitness = quad_fitness(''.join(plain_list))
 max_map = copy.deepcopy(char_map)
 max_plain = copy.deepcopy(plain_list)
 
-while max_fitness < -1807:
+while max_fitness < GOAL_FITNESS:
     char_map = new_key()
-    print(max_fitness)
-    for i in range(0,100000):
+    print("Current fitness: {}, Goal Fitness: {}".format(max_fitness, GOAL_FITNESS))
+    for i in range(0,50000):
         # Swap two random characters in char_map
         first_char = chr(ord('A') + random.randint(0,25))
         second_char = chr(ord('A') + random.randint(0,25))

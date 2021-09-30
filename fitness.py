@@ -10,6 +10,7 @@ file_list = [file1,file2,file3,file4]
 gram_dicts = []
 sum_freqs = []
 
+# Populate the dictionaries/frequency sums for monograms -> quadgrams
 for file_num in range(0,4):
     file_dict = dict()
     total_freq = 0
